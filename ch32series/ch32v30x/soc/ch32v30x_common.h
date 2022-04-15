@@ -10,6 +10,12 @@
 #ifndef __CH32V30x_COMMON_H
 #define __CH32V30x_COMMON_H
 
+#include <stdint.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+
 #include "ch32v30x_adc.h"
 #include "ch32v30x_bkp.h"
 #include "ch32v30x_can.h"

@@ -10,12 +10,13 @@ zephyr_library()
 zephyr_compile_definitions(
   -D${CONFIG_SOC}
   -DUSE_HAL_DRIVER
-  -DUSE_FULL_LL_DRIVER
   )
 
 if(CONFIG_CLOCK_CH32_HSE_CLOCK)
   zephyr_compile_definitions( -DHSE_VALUE=${CONFIG_CLOCK_CH32_HSE_CLOCK} )
 endif()
 
-add_subdirectory(ch32v30x)
+zephyr_include_directories(ch32v30x/soc)  
+zephyr_include_directories(ch32v30x/drivers/inc)
 
+add_subdirectory(ch32v30x)

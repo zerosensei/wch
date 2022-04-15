@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 
 zephyr_library_sources(soc/system_ch32v30x.c)
+zephyr_library_sources(soc/core_riscv.c)
+zephyr_library_sources(soc/ch32v30x_it.c)
 zephyr_library_sources_ifdef(CONFIG_USE_CH32_HAL_ADC drivers/src/ch32v30x_adc.c)
 zephyr_library_sources_ifdef(CONFIG_USE_CH32_HAL_CAN drivers/src/ch32v30x_can.c)
 zephyr_library_sources_ifdef(CONFIG_USE_CH32_HAL_CRC drivers/src/ch32v30x_crc.c)
