@@ -17,6 +17,6 @@ if(CONFIG_CLOCK_CH32_HSE_CLOCK)
 endif()
 
 zephyr_include_directories(ch32v30x/soc)  
-zephyr_include_directories(ch32v30x/drivers/inc)
+zephyr_include_directories(ch32v30x/drivers/include)
 
 add_subdirectory(ch32v30x)
